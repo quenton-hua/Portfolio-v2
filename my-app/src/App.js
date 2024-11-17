@@ -6,7 +6,7 @@ import ProjectsPage from "./components/ProjectsPage.js";
 import ExperiencePage from "./components/ExperiencePage.js";
 import ContactPage from "./components/ContactPage.js";
 import contactData from "./utils/contact.json";
-
+import { Analytics } from "@vercel/analytics/react"
 
 //TODO TEMP FIX
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -46,6 +46,7 @@ function App() {
 
   return (
     <div className="App">
+      <Analytics />
       <NavBar
         id="navbar"
         selectedTheme={selectedTheme}
